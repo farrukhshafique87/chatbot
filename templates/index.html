@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot UI</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <!-- Floating Chat Icon -->
+    <div id="chatbot-icon">
+        <img src="/static/chat_icon.png" alt="Chatbot Icon" />
+    </div>
+
+    <!-- Chat Popup -->
+    <div id="chat-popup" class="hidden">
+        <div class="chat-header">
+            <span>Chatbot</span>
+            <button id="close-chat">&times;</button>
+        </div>
+        <div class="chat-body" id="chat-body">
+            <div class="chat-welcome">
+                <center><h3>🏪 Welcome to Sports Era – Your Ultimate Sports Gear Destination!<br></h3></center>
+                <p><strong>Hi there!</strong> I'm your personal sports assistant. Whether you're a beginner or a pro, I'm here to help you find the best gear, answer questions, and make your shopping easier. 👟🎽🛒</p>
+                <div class="chat-help">
+                    <p><strong>📋 What I Can Help You With</strong><br>
+                    You can ask me things like:</p>
+                    <ul>
+                        <li>🥇 "Show me the latest running shoes"</li>
+                        <li>🏀 "What's the best basketball for indoor use?"</li>
+                        <li>👕 "Do you have jerseys for kids?"</li>
+                        <li>📦 "Where's my order?"</li>
+                        <li>💡 "Need help choosing workout gear"</li>
+                    </ul>
+                </div>
+                <div class="chat-actions">
+                    <button class="action-btn">🛍️ Shop by Sport</button>
+                    <button class="action-btn">🆕 New Arrivals</button>
+                    <button class="action-btn">🔥 Best Sellers</button>
+                    <button class="action-btn">💬 Talk to a Human</button>
+                    <button class="action-btn">🚚 Track My Order</button>
+                    <button class="action-btn">📞 Contact Support</button>
+                </div>
+            </div>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="user-input" placeholder="Type your message..." />
+            <button id="send-btn">Send</button>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html> 
